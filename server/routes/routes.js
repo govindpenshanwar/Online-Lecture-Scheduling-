@@ -13,6 +13,7 @@ import {
     handleSignUp,
     logout,
 } from "../controllers/controllers.js";
+import { connect } from "../configs/DbConfig.js";
 
 const router = express.Router();
 
@@ -29,4 +30,6 @@ router.get("/allLectures", getAllLectures);
 router.get("/getCourses", getAllCourse);
 router.delete("/deleteCourse/:id", deleteCourse);
 router.get("/logout", logout);
+
+connect();
 export default router;
