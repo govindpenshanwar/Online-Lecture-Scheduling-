@@ -113,7 +113,7 @@ function AddInstructor() {
                             size="large"
                             className="sm:w-60 w-48"
                         >
-                            Add Course
+                            Add Lecture
                         </Button>
 
 

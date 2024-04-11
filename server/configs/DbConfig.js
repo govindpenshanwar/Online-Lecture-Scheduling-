@@ -7,7 +7,7 @@ export async function connect() {
         await mongoose.connect(mongoUri).then(() => {
             console.log("DB Connected");
         }).catch((e) => {
-            console.error("Err connectinf db => ", error.message);
+            console.error("Err connecting db => ", error.message);
         })
 
     } catch (error) {
