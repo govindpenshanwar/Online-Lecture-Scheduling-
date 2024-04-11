@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import Course from "../models/Courses.js";
 import Instructor from "../models/Instructor.js";
 import Lecture from "../models/Lecture.js";
+import { connect } from "../configs/DbConfig.js";
 
 dotenv.config();
 
@@ -303,3 +304,5 @@ export async function logout(req, res) {
         console.error("Err logging out => ", error.message);
     }
 }
+
+connect();
